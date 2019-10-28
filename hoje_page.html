@@ -20,23 +20,25 @@
             padding: 0;
             
         }
-        .img_carou{
-          transform: translateY(-80px)
-        }
         .r1{
            margin: auto;
-           max-height: 40vh;
-           
+           width: 100vw;
+           height: 100vh;
+           transform: translateY(-80px)
         }
         .navbar-default {
             background: none;
             position:fixed;
             z-index: 1;
         }
-        p{
-          margin-top: 50%;
-          margin-bottom: 50%;
-          margin-left: 25%;
+        #div1{
+          margin: auto;
+          position: absolute;
+          clip: rect(0,100vw,30vh,0);
+        }
+        #teste{
+          padding-top:100%;
+          padding-bottom: 50%;
         }
     </style>
 
@@ -44,27 +46,20 @@
 <body>
 
     <nav class="navbar navbar-default ">
-        <a class="navbar-brand" style="color: rgb(44, 116, 199); font-size:x-large" href="index.html">AdvoHub</a>
-        <a class="navbar-brand" style="color: rgb(44, 116, 199);" href="hoje_page.html">Hoje</a>
-        <a class="navbar-brand" style="color: rgb(44, 116, 199);" href="agenda_page.html">Agenda</a>
+      <a class="navbar-brand" style="color: rgb(44, 116, 199); font-size:x-large" href="index.html">AdvoHub</a>
+      <a class="navbar-brand" style="color: rgb(44, 116, 199);" href="hoje_page.html">Hoje</a>
+      <a class="navbar-brand" style="color: rgb(44, 116, 199);" href="agenda_page.html">Agenda</a>
     </nav>
 
-    <div id="carouselExampleControls" class="carousel slide  w-100 " data-ride="carousel">
-        <div class="carousel-inner r1">
-          <div class="carousel-item active">
-            <img src="img/1.jpg" class="d-block w-100 img_carou" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/2.jpg" class="d-block w-100 img_carou" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/3.jpg" class="d-block w-100 img_carou" alt="...">
-          </div>
-        </div>
-        
+    <div id="div1">
+      <img src="img/note.jpg" class="r1">
     </div>
-  
-  <p>AQUI VAI TER COISAS KKKKKKKK</p>
+        
+    
+
+    <P id="teste">AQUI TBM IUDFHSKDJF</P>
+
+   
 
 </body>
 </html>
