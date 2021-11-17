@@ -37,8 +37,8 @@ body{
     font-size: 20px;
     font-weight: 400;
 }
-.sidebar .logo_content #btn{
-    position: absolute;
+#btn{
+   position: absolute;
     color:#fff;
     left: 90%;
     top: 6%;
@@ -75,6 +75,12 @@ body{
     font-size: 18px;
     color: #fff;
 }
+.bx-search{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+}
 .sidebar ul li a{
     color: #fff;
     display: flex;
@@ -89,10 +95,50 @@ body{
     background: #fff;
 
 }
-.sidebar ul li a i{
+.sidebar ul li i{
     height: 50px ;
     min-width: 50px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
+}
+.profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+}
+.profile_detail{
+    display: flex;
+    align-items: center;
+}
+.profile .profile_detail img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.name_job{
+    margin-left: 10px;
+}
+.name{
+    font-size: 15px;
+    font-weight: 400px;
+}
+.job{
+    font-size: 12px;
+}
+#log_out{
+    position: absolute;
+    left: 88%;
+    bottom: 5px;
+    transform: translateX(-50);
+    min-width: 50px;
+    line-height: 50px;
 }
