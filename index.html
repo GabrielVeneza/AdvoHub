@@ -10,65 +10,72 @@
     <!--Box Icons-->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
+        <div class="row logo_content">
+            <div class="logo col-3">
                 <i class='bx bxl-c-plus-plus' ></i>
                 <div class="logo_name">AdvoHub</div>
             </div>
-            <i class='bx bx-menu' id="btn"></i>
+            <div class="col-3 ">
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
         </div>
         <ul class="nav_list">
             <li>
                 <i class='bx bx-search' ></i>
-                <input type="text" placeholder="pesquisar...">
-               <!--<span class="tooltrip">Dashboard</span>-->
+                <input type="text" placeholder="Pesquisar...">
+              <span class="tooltrip">Pesquisar</span>
             </li>
             <li>
                 <a href="">
                     <i class='bx bx-grid-alt' ></i>
                     <span class="links_name">Painel</span>
                 </a> 
-                <!--<span class="tooltrip">Dashboard</span>-->
+                <span class="tooltrip">Painel</span>
              </li>
              <li>
                 <a href="">
                     <i class='bx bx-user' ></i>
                     <span class="links_name">Usuário</span>
                 </a> 
-                <!--<span class="tooltrip">Dashboard</span>-->
+               <span class="tooltrip">Usuário</span>
              </li>
              <li>
                 <a href="">
                     <i class='bx bx-pie-chart-alt-2' ></i>
                     <span class="links_name">Estatísticas</span>
                 </a> 
-                <!--<span class="tooltrip">Dashboard</span>-->
+                <span class="tooltrip">Estatísticas</span>
              </li>
              <li>
                 <a href="">
                     <i class='bx bx-folder' ></i>
                     <span class="links_name">Arquivos</span>
                 </a> 
-                <!--<span class="tooltrip">Dashboard</span>-->
+               <span class="tooltrip">Arquivos</span>
              </li>
              <li>
                 <a href="">
                     <i class='bx bxs-user-detail' ></i>
                     <span class="links_name">Clientes</span>
                 </a> 
-                <!--<span class="tooltrip">Dashboard</span>-->
+                <span class="tooltrip">Clientes</span>
              </li>
              <li>
                 <a href="">
                     <i class='bx bxs-cog' ></i>
                     <span class="links_name">Configurações</span>
                 </a> 
-                <!--<span class="tooltrip">Dashboard</span>-->
+                <span class="tooltrip">Configurações</span>
              </li>
         </ul>
         <div class="profile_content">
@@ -81,9 +88,27 @@
                     </div> 
                 </div>
                 <i class='bx bx-log-out' id="log_out"></i>
-                
             </div>
         </div>
     </div>
+    <div class="home_content">
+        <div class="text">
+            Home Content
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        sidebar.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
 </body>
 </html>
