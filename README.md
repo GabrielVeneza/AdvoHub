@@ -1,4 +1,4 @@
-# AdvoHub - Sistema de gerenciamento para advogados
+# AdvoHub - Sistema de Gerenciamento para Advogados
 
 <p>Ess é um sistema de gerenciamento para advogados, onde poderá <br/>
 ser feito o controle de seus clientes, processos, arquivos e etc.<br/>
