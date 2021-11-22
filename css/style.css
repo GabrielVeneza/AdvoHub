@@ -11,6 +11,7 @@ body{
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    background-color: gainsboro;
 }
 .sidebar{
     position: fixed;
@@ -33,14 +34,15 @@ body{
     align-items: center;
     opacity: 0;
     pointer-events: none;
+    transition: all 0.5s ease;
 }
 .sidebar.active .logo_content .logo{
     opacity: 1;
     pointer-events: none;
 }
-.logo_content .logo i{
-    font-size: 28px;
-    margin-right: 5px;
+.logo_content .logo img{
+    width: 40px;
+    margin-right: 10px;
 }
 .logo_content .logo .logo_name{
     font-size: 20px;
@@ -58,6 +60,11 @@ body{
     line-height: 50px;
     transform: translateX(-50%);
     transition: all 0.5s ease;
+    border-radius: 12px;
+}
+#btn:hover{
+    color: #11101d;
+    background: #fff;
 }
 .sidebar.active #btn{
     margin-left: 125px;
@@ -176,10 +183,12 @@ body{
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
+    transition: all 0.5s ease;
 }
 .sidebar.active .profile .profile_detail{
     opacity: 1;
     pointer-events: auto;
+    
 }
 .profile .profile_detail img{
     height: 45px;
@@ -220,6 +229,7 @@ body{
     height: 100%;
     width: calc(100% - 78px);
     left: 78px;
+    top: 25px;
     transition: all 0.5s ease;
 }
 .home_content .text{
@@ -231,4 +241,27 @@ body{
 .sidebar.active ~ .home_content{
     width: calc(100% - 240px);
     left: 240px;
+}
+.dash-1{
+    
+}
+.dash-2{
+    
+}
+.dash-3{
+    
+}
+.dashboard{
+    padding: 1%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-left: 25px;
+}
+.dash-1 i{
+    font-size: 32px;
+    color: #1d1b31;
+}
+.dash-1 p{
+    font-size: 50%;
 }
