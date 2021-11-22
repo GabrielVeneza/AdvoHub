@@ -207,11 +207,13 @@ body{
     font-size: 20px;
     border-radius: 12px;
     text-align: center;
+    transition: all 0.5s ease;
     
 }
 .sidebar.active #log_out{
     left: 88%;
     text-align: left;
+    transition: all 0.5s ease;
 }
 .home_content{
     position: absolute;
